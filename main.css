@@ -1,9 +1,9 @@
 p {
-	border-bottom: 3px solid #cd4236;
+	border-bottom: 3px solid red;
 }
 
 .kermit {
-	border: 3px solid #91e374;
+	border: 3px solid green;
 }
 
 #main-div-1 {
@@ -11,7 +11,6 @@ p {
 }
 
 #main-div-2 .kermit {
-	display: inline;
 	border: 3px dotted purple;
 }
 
@@ -23,35 +22,52 @@ h2 ~ p {
 	border: 3px solid blue;
 }
 
-#li-1 {
-	font-size: 30px;
+/* Hover on anchor tags */
+a:hover {
+	font-size: 50px;
 }
 
-#li-2 {
+/* active */
+a:active {
+	background-color: green;
+}
+
+/* Focus */
+input:focus {
+	background-color: yellow;
+}
+
+/* nth child */
+.sub-div li:nth-child(2n + 1) {
+	border: pink 5px solid;
+}
+
+.sub-div li:nth-child(2n) {
+	border: blue 5px solid;
+}
+
+/* nth of type */
+.sub-div li:nth-of-type(2n) {
+	color: blue;
+}
+
+section p:nth-child(2) {
+	color: red;
+}
+
+section p:nth-of-type(2) {
+	color: orange;
+}
+
+/* before */
+#main-div-1::before {
+	content: "\201c";
+	font-size: 60px;
 	font-weight: bold;
+	color: purple;
 }
 
-#li-3 {
-	text-transform: uppercase;
+/* after */
+#main-div-1::after {
+	content: "$$$";
 }
-
-#mystery-ul {
-	font-family: "mystery quest";
-}
-
-#flex-kermit {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#flex-kermit img {
-	margin: 15px;
-	padding: 10px;
-	max-width: 50px;
-}
-
-
-
-
-
